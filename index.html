@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «Новый проект»</title>
+</head>
+
+<body>
+	<!-- <div class="rootpage">
+			<h1>Верстка «Новый проект»</h1>
+			<div class="rootpage__info">
+				Особенности проекта
+			</div>
+			<h2>Готовые страницы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html">Главная</a></li>
+			</ol>
+			<h2>Попапы:</h2>
+			<ol class="rootpage__list">
+				<li><a target="_blank" href="home.html#"></a></li>
+			</ol>
+			<div class="rootpage__tnx">
+				<h2>Спасибо за заказ!</h2>
+				<p>Буду рад (а) хорошему отзыву.</p>
+				<p>Обращайтесь еще!</p>
+			</div>
+			<div class="rootpage__contacts">
+				<h2>Мои контакты:</h2>
+				<p>Почта: <a href="mailto:email@gmail.com">email@gmail.com</a></p>
+				<p>Телефон: <a href="tel:8800800800">8 800 800 800</a></p>
+				<p>Соц. сеть: <a href="">ссылка на соц. сеть</a></p>
+			</div>
+		</div> -->
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__menu">
+					<ul class="header__networks networks">
+						<li class="networks__list">
+							<a target="_blank" class="networks__link" href="https://vk.com/eternalstoneinside">
+								<img src="img/index/vk.svg?_v=1645970413206" alt="vk">
+							</a>
+						</li>
+						<li class="networks__list">
+							<a target="_blank" class="networks__link" href="mailto:dorlenko2017@gmail.com">
+								<img src="img/index/gmail.svg?_v=1645970413206" alt="gmail">
+							</a>
+						</li>
+						<li class="networks__list">
+							<a target="_blank" class="networks__link" href="https://www.instagram.com/eternalstoneinside/">
+								<img src="img/index/inst.svg?_v=1645970413206" alt="inst">
+							</a>
+						</li>
+						<li class="networks__list">
+							<a target="_blank" class="networks__link" href="https://t.me/eternalstoneinside">
+								<img src="img/index/tg.svg?_v=1645970413206" alt="tg">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="header__phone">
+					<a href="tel:380995546124" class="phone">(+38) 099-554-61-24</a>
+				</div>
+			</div>
+		</header>
+		<div class="offer">
+			<div class="offer__container container">
+				<div class="offer__info">
+					<h2 class="offer__title">/ Веб-разработчик</h2>
+					<h3 class="offer__name">Дмитрий Орленко</h3>
+					<div class="offer__text">Ссылка на ваш сайт:</div>
+					<a target="_blank" class="offer__btn" href="home.html#">Нажми на меня!</a>
+				</div>
+				<div class="offer__image">
+					<picture>
+						<source srcset="img/index/main-photo.webp" type="image/webp">
+							<img src="img/index/main-photo.png?_v=1645970413206" alt="main">
+					</picture>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__thank">Спасибо за заказ! Буду рад видеть Bас снова.</div>
+			</div>
+		</footer>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+		@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,700&display=swap");
+		* ,*::before, *::after {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+			box-sizing: border-box; 
+		}
+		html, body {
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			min-width: 320px;
+			width: 100%;
+			color: #EBEBEB;
+		}
+		body {
+			font-family: Montserrat;
+			font-size: 100%;
+			line-height: 1;
+			font-size: 1rem;
+			background: #1B2F36;
+		}
+		a {
+			display: block;
+			text-decoration: underline;
+		}
+		a:visited {
+			text-decoration: underline;
+		}
+		a:hover {
+			text-decoration: none;
+		}
+		ul li {
+			list-style: none;
+		}
+		img {
+			vertical-align: top;
+		}
+		.wrapper {
+			width: 100%;
+			min-height: 100%;
+			overflow: hidden;
+		}
+		.header {
+			padding: 30px 0;
+		}
+		.container {
+			max-width: 1190px;
+			margin: 0 auto;
+			padding: 0 15px;
+			box-sizing: content-box; 
+		}
+		.header__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.header__networks {
+			display: flex;
+			gap: 15px;
+		}
+		.networks__link:hover {
+			transform: rotate(360deg);
+  			transition: all .7s ease;
+		}
+		.header__phone {
+			display: flex;
+			align-items: center;
+		}
+		.phone {
+			display: flex;
+			align-items: center;
+			color: #fff;
+			text-decoration: none;
+		}
+		.phone::before {
+			content: '';
+			display: block;
+			background: url('img/index/phone.svg') no-repeat center;
+			width: 32px;
+			height: 32px;
+			margin-right: 15px;
+		}
+		.offer__container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.offer__info {
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			max-width: 527px;
+		}
+		.offer__title {
+			font-weight: 500;
+			font-size: 35px;
+			line-height: 43px;
+		}
+		.offer__name {
+			font-weight: bold;
+			font-size: 100px;
+			line-height: 122px;
+		}
+		@media (max-width: 530px) {
+			.offer__image {
+				display: none;
+			}
+			.offer__name {
+				font-size: 70px;
+				line-height: 80px;
+			}
+			.offer__info {
+				gap: 10px;
+				align-items: center;
+				text-align: center;
+			}
+			.offer__title {
+				font-size: 30px;
+			}
+			.offer__btn {
+				width: 100%;
+			}
+			.offer__text {
+				margin-top: 30px;
+			}
+			.footer__thank {
+				margin-top: 30px;
+			}
+		}
+		@media (max-width: 470px) {
+			.header__phone {
+				display: none;
+			}
+			.header__container {
+				justify-content: center;
+			}
+			.offer__name {
+				font-size: 60px;
+			}
+		}
+		.offer__btn {
+			display: flex;
+			padding: 20px 30px;
+			background: linear-gradient(97.94deg, #D3FBFF 0%, #60C3CA 101.81%);
+			border-radius: 10px;
+			text-align: center;
+			justify-content: center;
+			text-decoration: none;
+			color: #1B2F36;
+		}
+		.offer__btn:hover {
+			background: linear-gradient(97.94deg, #a7f8ff 0%, #3dbec7 101.81%);
+		}
+		.footer {
+			padding-bottom: 30px;
+		}
+		.footer__container {
+			display: flex;
+			justify-content: center;
+			text-align: center;
+		}
+</style>
+
+</html>
